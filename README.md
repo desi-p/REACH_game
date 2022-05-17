@@ -6,8 +6,8 @@ This a text-based version of Mastermind and uses the terminal for user interacti
 
 **To Set Up**
 
-1. Once cloned and virtual environment set up; install requirements.txt.
-2. Game is to played from the mastermind.py file.
+1. Once cloned and virtual environment set up (developed using Visual Studio Code); install requirements.txt (*pip install requirements.txt*).
+2. Game is to be played in the terminal from the mastermind.py file.
 
 **To Play**
 
