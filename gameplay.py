@@ -5,8 +5,8 @@ from api import comp_sequence
 def game():
     attempt = 1
     guess_history = {}
-    while attempt < 9:
-        attempts_left = (8 - int(attempt))
+    while attempt < 11:
+        attempts_left = (10 - int(attempt))
         count = 0
         #obtain users guess
         num_a = input(f"\nAttempt #{attempt}. Please enter your first number.\n")
@@ -41,14 +41,14 @@ def game():
                 print(f'\nYou have {count} number correct and {attempts_left} attempts left')
             elif count != 1 and attempts_left == 1:
                 print(f'\nYou have {count} numbers correct and {attempts_left} attempt left.')
-            else: 
+            elif attempts_left == 0:
+                print(f'\nYou ran out of attempts! The secret code was {comp_sequence}.')
+            else:
                 print(f'\nYou have {count} numbers correct and {attempts_left} attempts left.')
-        while attempt <= 8:           
+        while attempt <= 10:           
             guess_history[user_guess] = count
             view_history = input("\nWould you like to see your previous attempts and count of correct numbers? Press 'y' to view history or any key to continue \n").lower()
             if view_history == "y":
                 print(guess_history)
             break
 
-    else:
-        print(f'\nYou ran out of attempts! The secret code was {comp_sequence}.')

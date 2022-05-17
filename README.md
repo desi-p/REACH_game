@@ -19,6 +19,6 @@ This a text-based version of Mastermind and uses the terminal for user interacti
 
 - Random Integer API will provide 4 random integers from range 0 - 7 that are combined to make a secret 4 digit code (integers can be repeated).
 - User will identify 4 integers and be informed how many are correct. User will not be notified of which integer is correct but rather, how many of the 4 are correct.
-- User will be given 8 attempts to break the code and can view attempt history after the first 7 attempts. 
+- User will be given 10 attempts to break the code and can view attempt history after the first 9 attempts. 
 
 
